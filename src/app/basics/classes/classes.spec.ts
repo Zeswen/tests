@@ -17,4 +17,8 @@ describe('Class tests', () => {
     const res = player.receiveDamage(100);
     expect(res).toBe(0);
   });
+  it('should return 0hp if receives 150dmg', () => {
+    const res = player.receiveDamage(150);
+    expect(res).toBe(0);
+  });
 });
